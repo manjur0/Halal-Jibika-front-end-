@@ -1,0 +1,9 @@
+ul .active {
+    color: rgb(25 164 99);
+    border-bottom: 3px solid rgb(25 164 99);
+}
+
+ul a:hover {
+    color: rgb(25 164 99);
+    border-bottom: 3px solid rgb(25 164 99);
+}

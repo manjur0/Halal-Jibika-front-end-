@@ -1,9 +1,12 @@
+import Company from "../../Components/HomeComponets/Company/Company";
+import HeroSection from "../../Components/HomeComponets/HeroSection/HeroSection";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>This is home</h1>
+            <HeroSection />
+            <Company/>
         </div>
     );
 };
