@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
+import { GrFavorite } from "react-icons/gr";
+
 
 const Job = ({ job }) => {
   const { id, way, logo, title, location, salary, position } = job;
@@ -30,7 +32,10 @@ const Job = ({ job }) => {
     <div>
       <div className="card w-96 bg-base-100 shadow-xl my-10 mx-auto py-8 px-10 rounded-lg">
         <div className="card-body ">
-          <img src={logo} className="w-40" alt="" />
+          <div className="flex items-center justify-between">
+            <img src={logo} className="w-40" alt="" />
+            <GrFavorite onClick={id} className="text-2xl text-[#19A463] cursor-pointer" />
+          </div>
           <h4 className="text-[#19A463] text-xl my-3 ">{way}</h4>
           <h2 className="card-title text-2xl font-bold">{title}</h2>
           <div className="flex justify-between ">
@@ -49,7 +54,7 @@ const Job = ({ job }) => {
           <p className="">{salary}</p>
           <button
             onClick={() => handleShowJob(id)}
-            className="btn btn-primary bg-[#19A463] p-2 rounded-lg text-white  "
+            className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
           >
             Apply
           </button>

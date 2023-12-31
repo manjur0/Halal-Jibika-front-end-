@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-const HeroSection = () => {
+const HeroSection = ({ title, description, image, button }) => {
+  
   return (
     <div>
       <div
@@ -10,7 +11,8 @@ const HeroSection = () => {
       >
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8 my-8">
           <div className="flex flex-col justify-center px-4 py-12 md:py-16 lg:col-span-7 lg:gap-x-6 lg:px-6 lg:py-24 xl:col-span-6">
-            <h1 className="mt-8 text-3xl font-bold tracking-tight  text-[#111D3B] md:text-4xl lg:text-7xl">
+            <h1 className="mt-8 text-3xl font-bold tracking-tight  text-[#111D3B] md:text-4xl lg:text-7xl"> 
+              {title}
               Find Your Dream Job with
               <span className="text-[#19A463]"> JIBIKA.</span>
             </h1>

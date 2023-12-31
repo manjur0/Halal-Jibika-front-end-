@@ -1,11 +1,5 @@
-
-
 const Favorite = () => {
-    return (
-        <div>
-            this is favorite page 
-        </div>
-    );
+  return <div></div>;
 };
 
 export default Favorite;

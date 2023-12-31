@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Job from "./Job";
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
+import { IoMdAddCircle } from "react-icons/io";
+
 
 const Jobs = ({ handlPopup }) => {
   const [jobs, setJobs] = useState([]);
@@ -24,15 +26,12 @@ const Jobs = ({ handlPopup }) => {
           <Job key={job.id} job={job} />
         ))}
       </div>
-      <div className="text-center">
-        <Link to={"/jobs"}>
-          <button
-            className="bg-[#19A463] p-2 rounded-lg text-white ]"
-            onClick={() => handleShowJob(showAllJob)}
-          >
-            Show ALl
+      <div className="flex justify-center">
+        <NavLink to={"/addjobs"}>
+          <button className="bg-[#19A463] text-2xl font-bold  p-3 rounded-lg text-white ] flex items-center justify-center">
+            Add New Jobs <IoMdAddCircle />
           </button>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

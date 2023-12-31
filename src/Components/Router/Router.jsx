@@ -7,6 +7,7 @@ import Favorite from "../../Pages/Favorite/Favorite";
 import Contact from "../../Pages/Contact/Contact";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
+import AddJobs from "../../Pages/AddJobs/AddJobs";
 
 export const router = createBrowserRouter([
   {
@@ -35,11 +36,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "/register",
-        element: <Register/>
+        element: <Register />,
       },
       {
         path: "/login",
-        element: <Login/>
+        element: <Login />,
+      },
+      {
+        path: "/addjobs",
+        element: <AddJobs />,
       },
     ],
   },
