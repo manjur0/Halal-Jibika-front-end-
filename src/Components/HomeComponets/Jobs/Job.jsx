@@ -3,6 +3,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
 import { GrFavorite } from "react-icons/gr";
+import { NavLink } from "react-router-dom";
 
 
 const Job = ({ job }) => {
@@ -39,30 +40,41 @@ const Job = ({ job }) => {
         <div className="card-body ">
           <div className="flex items-center justify-between">
             <img src={logo} className="w-40" alt="" />
-            <GrFavorite onClick={()=>handleFavoriteJob(id)} className="text-2xl text-[#19A463] cursor-pointer" />
+            <GrFavorite
+              onClick={() => handleFavoriteJob(id)}
+              className="text-2xl text-[#19A463] cursor-pointer"
+            />
           </div>
           <h4 className="text-[#19A463] text-xl my-3 ">{way}</h4>
-          <h2 className="card-title text-2xl font-bold">{title}</h2>
-          <div className="flex justify-between ">
-            <p className="text-lg font-semibold flex items-center">
+          <p className="font-semibold flex items-center">
+            <MdAccessTime />
+            {position}
+          </p>
+          <h2 className="card-title text-2xl font-bold mt-3">{title}</h2>
+          <div className="flex justify-between mt-3 ">
+            <p className="text-lg font-semibold flex items-center ">
               <IoLocationOutline />
               {location}
             </p>
-            <p className="font-semibold flex items-center">
-              <MdAccessTime />
-              {position}
-            </p>
+            <p className="text-xl font-semibold">{salary}</p>
           </div>
         </div>
 
         <div className="flex justify-between my-8 text-sm font-semibold">
-          <p className="">{salary}</p>
           <button
             onClick={() => handleShowJob(id)}
             className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
           >
             Apply
           </button>
+          <NavLink to={`/jobdetails/${id}`}>
+            <button
+              
+              className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
+            >
+              Details
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>

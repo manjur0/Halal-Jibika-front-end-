@@ -5,12 +5,9 @@ import {  NavLink } from "react-router-dom";
 import { IoMdAddCircle } from "react-icons/io";
 
 
-const Jobs = ({ handlPopup }) => {
+const Jobs = ({  }) => {
   const [jobs, setJobs] = useState([]);
-  const [showAllJob, setShowAllJob] = useState(8);
-  const handleShowJob = () => {
-    setShowAllJob(!showAllJob);
-  };
+ 
   useEffect(() => {
     const fetchJobs = async () => {
       const response = await fetch("../../../../public/Jobs.json");

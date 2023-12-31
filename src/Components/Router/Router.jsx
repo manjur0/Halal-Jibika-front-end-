@@ -9,6 +9,7 @@ import Register from "../Register/Register";
 import Login from "../Login/Login";
 import AddJobs from "../../Pages/AddJobs/AddJobs";
 import ErrorPage from "../Utilitys/ErrorPage";
+import ApplyedJobs from "../../Pages/ApplyedJobs";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ export const router = createBrowserRouter([
       {
         path: "/favorite",
         element: <Favorite />,
+        
+      },
+      {
+        path: "/applyedjobs",
+        element: <ApplyedJobs />,
       },
       {
         path: "/register",

@@ -37,6 +37,12 @@ const Navbar = () => {
                 Favorite
               </NavLink>
               <NavLink
+                to={"/applyedjobs"}
+                className="inline-flex items-center text-xl font-semibold text-gray-800 hover:text-gray-900"
+              >
+                Applyed Jobs
+              </NavLink>
+              <NavLink
                 to={"/contact"}
                 className="inline-flex items-center text-xl font-semibold text-gray-800 hover:text-gray-900"
               >

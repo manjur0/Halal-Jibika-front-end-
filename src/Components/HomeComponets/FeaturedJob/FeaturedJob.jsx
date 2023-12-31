@@ -9,7 +9,7 @@ const FeaturedJob = () => {
           Perfect Job For You
         </h1>
       </div>
-      <Jobs />
+      <Jobs seeAll={"See All Jobs"} />
     </div>
   );
 };
