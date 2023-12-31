@@ -13,9 +13,9 @@ const Job = ({ job }) => {
       text: "Do you want to add this job!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: "#19A463",
       cancelButtonColor: "#d33",
-      confirmButtonText: "Success!",
+      confirmButtonText: "Yeas!",
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
@@ -69,5 +69,5 @@ Job.propTypes = {
   location: PropTypes.string,
   salary: PropTypes.string,
   position: PropTypes.string,
-  handlPopup: PropTypes.func,
+  id: PropTypes.number,
 };

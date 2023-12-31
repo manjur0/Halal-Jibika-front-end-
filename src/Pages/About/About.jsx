@@ -1,8 +1,9 @@
+import AboutHero from "../../Components/CommonSocial/About/AboutHero";
 
 const About = () => {
     return (
         <div>
-            this is about page 
+            <AboutHero/>
         </div>
     );
 };

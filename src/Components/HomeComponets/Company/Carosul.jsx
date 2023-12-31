@@ -1,7 +1,10 @@
 const Carosul = () => {
   return (
     <div>
-      <div>
+      <div
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
         <div className="carousel w-full flex justify-between my-12">
           <div id="item1" className="carousel-item w-[150px]">
             <img

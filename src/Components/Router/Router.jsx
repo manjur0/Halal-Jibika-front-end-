@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../../Root/Root";
 import Home from "../../Pages/Home/Home";
-import Jobs from "../../Pages/Jobs/Jobs";
+import Jobs from "../../Pages/Jobs/AllJobs";
 import About from "../../Pages/About/About";
 import Favorite from "../../Pages/Favorite/Favorite";
 import Contact from "../../Pages/Contact/Contact";
