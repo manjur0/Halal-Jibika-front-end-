@@ -8,11 +8,13 @@ import Contact from "../../Pages/Contact/Contact";
 import Register from "../Register/Register";
 import Login from "../Login/Login";
 import AddJobs from "../../Pages/AddJobs/AddJobs";
+import ErrorPage from "../Utilitys/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+
     children: [
       {
         path: "/",
@@ -45,6 +47,10 @@ export const router = createBrowserRouter([
       {
         path: "/addjobs",
         element: <AddJobs />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

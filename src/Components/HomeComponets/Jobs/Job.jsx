@@ -27,14 +27,19 @@ const Job = ({ job }) => {
         });
       }
     });
-  };
+    };
+    
+    // faviorite job handler
+    const handleFavoriteJob = (id) => {
+        console.log(id);
+    }
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl my-10 mx-auto py-8 px-10 rounded-lg">
         <div className="card-body ">
           <div className="flex items-center justify-between">
             <img src={logo} className="w-40" alt="" />
-            <GrFavorite onClick={id} className="text-2xl text-[#19A463] cursor-pointer" />
+            <GrFavorite onClick={()=>handleFavoriteJob(id)} className="text-2xl text-[#19A463] cursor-pointer" />
           </div>
           <h4 className="text-[#19A463] text-xl my-3 ">{way}</h4>
           <h2 className="card-title text-2xl font-bold">{title}</h2>
