@@ -1,3 +1,4 @@
+import Button from "../../Utilitys/Button";
 import Jobs from "../Jobs/Jobs";
 
 const FeaturedJob = () => {
@@ -9,7 +10,10 @@ const FeaturedJob = () => {
           Perfect Job For You
         </h1>
       </div>
-      <Jobs seeAll={"See All Jobs"} />
+      <Jobs />
+      <div className="flex justify-center items-center text-center">
+        <Button seeAll="See All Jobs" route="/jobs" />
+      </div>
     </div>
   );
 };

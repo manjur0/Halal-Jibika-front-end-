@@ -1,4 +1,4 @@
-import Job from "../../Components/HomeComponets/Jobs/Job";
+
 import Hero from "../../Components/Utilitys/Hero";
 import MainTitle from "../../Components/Utilitys/MainTitle";
 

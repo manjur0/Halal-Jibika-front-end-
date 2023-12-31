@@ -1,4 +1,6 @@
+import { IoIosAddCircleOutline } from "react-icons/io";
 import Jobs from "../../Components/HomeComponets/Jobs/Jobs";
+import Button from "../../Components/Utilitys/Button";
 import Hero from "../../Components/Utilitys/Hero";
 import MainTitle from "../../Components/Utilitys/MainTitle";
 
@@ -13,6 +15,13 @@ const AllJobs = () => {
       />
       <MainTitle mainTitle="All Jobs List For You  " />
       <Jobs />
+      <div className="flex justify-center items-center mb-12">
+        <Button
+          seeAll="Add New Jobs"
+          route="/addjobs"
+          icons={<IoIosAddCircleOutline />}
+        ></Button>
+      </div>
     </div>
   );
 };

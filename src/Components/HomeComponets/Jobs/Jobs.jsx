@@ -1,13 +1,10 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Job from "./Job";
-import {  NavLink } from "react-router-dom";
-import { IoMdAddCircle } from "react-icons/io";
 
-
-const Jobs = ({  }) => {
+const Jobs = ({}) => {
   const [jobs, setJobs] = useState([]);
- 
+
   useEffect(() => {
     const fetchJobs = async () => {
       const response = await fetch("../../../../public/Jobs.json");
@@ -23,13 +20,7 @@ const Jobs = ({  }) => {
           <Job key={job.id} job={job} />
         ))}
       </div>
-      <div className="flex justify-center">
-        <NavLink to={"/addjobs"}>
-          <button className="bg-[#19A463] text-2xl font-bold  p-3 rounded-lg text-white ] flex items-center justify-center">
-            Add New Jobs <IoMdAddCircle />
-          </button>
-        </NavLink>
-      </div>
+      
     </div>
   );
 };

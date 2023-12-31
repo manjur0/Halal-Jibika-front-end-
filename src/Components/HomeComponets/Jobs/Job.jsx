@@ -3,8 +3,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
 import { GrFavorite } from "react-icons/gr";
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
 
 const Job = ({ job }) => {
   const { id, way, logo, title, location, salary, position } = job;
@@ -28,12 +27,12 @@ const Job = ({ job }) => {
         });
       }
     });
-    };
-    
-    // faviorite job handler
-    const handleFavoriteJob = (id) => {
-        console.log(id);
-    }
+  };
+
+  // faviorite job handler
+  const handleFavoriteJob = (id) => {
+    console.log(id);
+  };
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl my-10 mx-auto py-8 px-10 rounded-lg">
@@ -67,14 +66,11 @@ const Job = ({ job }) => {
           >
             Apply
           </button>
-          <NavLink to={`/jobdetails/${id}`}>
-            <button
-              
-              className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
-            >
+          <Link to={`/jobdetails/${id}`}>
+            <button className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all ">
               Details
             </button>
-          </NavLink>
+          </Link>
         </div>
       </div>
     </div>
