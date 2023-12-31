@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "way": "Remote",
+    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-1.png",
+    "title": "Software Engineer",
+    "location": "San Francisco, CA",
+    "salary": "$120,000",
+    "position": "Senior"
+  },
+  {
+    "id": 2,
+    "way": "Remote",
+    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
+    "title": "Data Scientist",
+    "location": "New York, NY",
+    "salary": "$110,000",
+    "position": "Intern"
+  },
+  {
+    "id": 3,
+    "way": "Remote",
+    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
+
+    "title": "UX Designer",
+    "location": "Seattle, WA",
+    "salary": "$100,000",
+    "position": "Full-Time"
+  },
+  {
+    "id": 4,
+    "way": "Remote",
+    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-1.png",
+    "title": "Product Manager",
+    "location": "Austin, TX",
+    "salary": "$130,000",
+    "position": "Senior"
+  },
+  {
+    "id": 5,
+    "way": "Remote",
+    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
+    "title": "Marketing Specialist",
+    "location": "Chicago, IL",
+    "salary": "$90,000",
+    "position": "Intern"
+  },
+  {
+    "id": 6,
+    "way": "Remote",
+    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
+    "title": "Front-end Developer",
+    "location": "Los Angeles, CA",
+    "salary": "$110,000",
+    "position": "Full-Time"
+  },
+  {
+    "id": 7,
+    "way": "Remote",
+    "logo": "company7_logo.png",
+    "title": "Network Engineer",
+    "location": "Denver, CO",
+    "salary": "$115,000",
+    "position": "Senior"
+  },
+  {
+    "id": 8,
+    "way": "Remote",
+    "logo": "company8_logo.png",
+    "title": "HR Coordinator",
+    "location": "Miami, FL",
+    "salary": "$95,000",
+    "position": "Intern"
+  }
+]

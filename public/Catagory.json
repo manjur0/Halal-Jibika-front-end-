@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/voice-2.png",
+    "title": "Digital Marketing",
+    "job_count": 10
+  },
+  {
+    "id": 2,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/edit-square.png",
+    "title": "UI/UX Design",
+    "job_count": 8
+  },
+  {
+    "id": 3,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/edit.png",
+    "title": "Content Writing",
+    "job_count": 15
+  },
+  {
+    "id": 4,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/activity.png",
+    "title": "Development",
+    "job_count": 12
+  },
+  {
+    "id": 5,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/activity.png",
+    "title": "Account & Finance",
+    "job_count": 7
+  },
+  {
+    "id": 6,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/document.png",
+    "title": "HR Managment",
+    "job_count": 5
+  },
+  {
+    "id": 7,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/video.png",
+    "title": "Videography",
+    "job_count": 9
+  },
+  {
+    "id": 8,
+    "image": "https://html.creativegigstf.com/khuj/khuj/images/icon/voice-2.png",
+    "title": "Administrator",
+    "job_count": 11
+  }
+]
