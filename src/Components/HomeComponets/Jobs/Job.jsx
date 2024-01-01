@@ -3,7 +3,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
 import { GrFavorite } from "react-icons/gr";
-import { Link, NavLink } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 
 const Job = ({ job }) => {
   const { id, way, logo, title, location, salary, position } = job;

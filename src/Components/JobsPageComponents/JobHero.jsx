@@ -3,9 +3,10 @@ import HeroSection from "../HomeComponets/HeroSection/HeroSection";
 
 const JobHero = () => {
     return (
-        <div>
-            <HeroSection/>
-        </div>
+      <div>
+        <HeroSection />
+        
+      </div>
     );
 };
 

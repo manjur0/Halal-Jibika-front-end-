@@ -10,7 +10,7 @@ const FeaturedJob = () => {
           Perfect Job For You
         </h1>
       </div>
-      <Jobs />
+      <Jobs slices={6} />
       <div className="flex justify-center items-center text-center">
         <Button seeAll="See All Jobs" route="/jobs" />
       </div>

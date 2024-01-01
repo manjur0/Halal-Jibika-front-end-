@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Job from "./Job";
 
-const Jobs = ({}) => {
+const Jobs = ({slices}) => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
@@ -16,11 +16,10 @@ const Jobs = ({}) => {
   return (
     <div className="mx-auto max-w-7xl my-20   ">
       <div className=" grid grid-cols-1 mx-auto  gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {jobs.slice(0, 6).map((job) => (
+        {jobs.slice(0, slices).map((job) => (
           <Job key={job.id} job={job} />
         ))}
       </div>
-      
     </div>
   );
 };

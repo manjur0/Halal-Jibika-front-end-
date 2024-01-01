@@ -10,7 +10,6 @@ const Jobdetails = () => {
   const idInd = parseInt(id);
   console.log(id);
   const job = jobDetails.find((job) => job.id === idInd);
-  const { title, location, salary, position, way, logo } = job;
 
   return (
     <div className="mx-auto max-w-7xl ">
