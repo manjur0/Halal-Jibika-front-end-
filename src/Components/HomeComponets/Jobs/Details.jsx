@@ -5,8 +5,8 @@ import Button from "../../Utilitys/Button";
 const Details = ({ job }) => {
   const { id, way, logo, title, location, salary, position, description } = job;
   const { overview, details, requirements } = description;
-  const { responsibilities,  } = details;
-const { content } = requirements;
+  const { responsibilities } = details;
+  const { content } = requirements;
   return (
     <div className="">
       <div className=" grid grid-cols-3 gap-4 md:grid-cols-3 my-5">

@@ -34,14 +34,14 @@ const ApplyedJobs = () => {
       </div>
 
       {/* Applyed Jobs container */}
-      {
-        applyedJobs?.map((job) => (
+      <div  className="mx-auto max-w-7xl grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 my-12"> 
+        {applyedJobs?.map((job) => (
           // <ul key={job.id}>
           //   <li>{job.title}</li>
           // </ul>
           <AddJobs key={job.id} applyedJob={job} />
-        ))
-      }
+        ))}
+      </div>
     </div>
   );
 };
