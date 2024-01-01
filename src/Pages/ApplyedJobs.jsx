@@ -12,13 +12,11 @@ const ApplyedJobs = () => {
     const storedJobsId = getStoredJobApplication();
     if (jobsList?.length > 0) {
       const jobsApplyed = jobsList?.filter((job) =>
-        storedJobsId?.includes(job.id)
+        storedJobsId?.includes(job?.id)
       );
       setApplyedJobs(jobsApplyed);
-      // console.log(jobsList, storedJobsId, jobsApplyed);
     }
   }, []);
-  console.log(applyedJobs);
 
   return (
     <div>
@@ -36,9 +34,6 @@ const ApplyedJobs = () => {
       {/* Applyed Jobs container */}
       <div  className="mx-auto max-w-7xl grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 my-12"> 
         {applyedJobs?.map((job) => (
-          // <ul key={job.id}>
-          //   <li>{job.title}</li>
-          // </ul>
           <AddJobs key={job.id} applyedJob={job} />
         ))}
       </div>

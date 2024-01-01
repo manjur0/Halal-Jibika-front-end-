@@ -5,9 +5,16 @@ const Categories = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     const fetchCategories = async () => {
-      const response = await fetch("../../../../public/Catagory.json");
-      const data = await response.json();
-      setCategories(data);
+      try {
+        const response = await fetch("/Catagory.json");
+        if (!response) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setCategories(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
     };
     fetchCategories();
   }, []);

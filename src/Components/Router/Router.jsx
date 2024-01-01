@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -46,7 +46,7 @@ export const router = createBrowserRouter([
       {
         path: "/applyedjobs",
         element: <ApplyedJobs />,
-        loader: () => fetch(`../../../public/Jobs.json`),
+        loader: () => fetch("/Jobs.json"),
       },
       {
         path: "/register",
@@ -59,10 +59,6 @@ export const router = createBrowserRouter([
       {
         path: "/addjobs",
         element: <AddJobs />,
-      },
-      {
-        path: "*",
-        element: <ErrorPage />,
       },
     ],
   },
