@@ -1,9 +1,11 @@
 import Swal from "sweetalert2";
 import Job from "./HomeComponets/Jobs/Job";
+import { setJobApplication } from "./Utilitys/LocalStorage";
 
 
 const AppliedPopup = () => {
-      const handleShowJob = (id) => {
+  const handleShowJob = (id) => {
+        setJobApplication(id)
         console.log(id);
         Swal.fire({
           title: "Are you sure?",

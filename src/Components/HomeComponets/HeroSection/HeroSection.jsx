@@ -40,7 +40,7 @@ const HeroSection = ({ title, description, image, button }) => {
             className="relative lg:col-span-5 lg:-mr-8   xl:col-span-6"
           >
             <img
-              className="relative aspect-[3/2] bg-[#19a4631a] object-cover lg:aspect-[4/3] lg:h-[800px]  xl:aspect-[16/9]"
+              className="relative aspect-[3/2]  object-cover lg:aspect-[4/3] lg:h-[700px]  xl:aspect-[16/0]"
               src="https://html.creativegigstf.com/khuj/khuj/images/banner/banner-1.png"
               alt=""
             />

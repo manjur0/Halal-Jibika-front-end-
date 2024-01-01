@@ -4,11 +4,14 @@ import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
 import { GrFavorite } from "react-icons/gr";
 import { Link,  } from "react-router-dom";
+import { setJobApplication } from "../../Utilitys/LocalStorage";
 
 const Job = ({ job }) => {
   const { id, way, logo, title, location, salary, position } = job;
 
-  const handleShowJob = (id) => {
+  const handleApplyedJobAndAlert = (id) => {
+    
+    setJobApplication(id)
     console.log(id);
     Swal.fire({
       title: "Are you sure?",
@@ -35,7 +38,11 @@ const Job = ({ job }) => {
   };
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl my-10 mx-auto py-8 px-10 rounded-lg">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className="card w-96 bg-base-100 shadow-xl my-10 mx-auto py-8 px-10 rounded-lg"
+      >
         <div className="card-body ">
           <div className="flex items-center justify-between">
             <img src={logo} className="w-40" alt="" />
@@ -61,7 +68,7 @@ const Job = ({ job }) => {
 
         <div className="flex justify-between my-8 text-sm font-semibold">
           <button
-            onClick={() => handleShowJob(id)}
+            onClick={() => handleApplyedJobAndAlert(id)}
             className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
           >
             Apply

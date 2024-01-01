@@ -15,7 +15,7 @@ const Jobs = ({slices}) => {
   }, []);
   return (
     <div className="mx-auto max-w-7xl my-20   ">
-      <div className=" grid grid-cols-1 mx-auto  gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div   className=" grid grid-cols-1 mx-auto  gap-4 md:grid-cols-2 lg:grid-cols-3">
         {jobs.slice(0, slices).map((job) => (
           <Job key={job.id} job={job} />
         ))}
