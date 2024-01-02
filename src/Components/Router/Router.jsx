@@ -5,12 +5,12 @@ import Jobs from "../../Pages/Jobs/AllJobs";
 import About from "../../Pages/About/About";
 import Favorite from "../../Pages/Favorite/Favorite";
 import Contact from "../../Pages/Contact/Contact";
-import Register from "../Register/Register";
 import Login from "../Login/Login";
 import AddJobs from "../../Pages/AddJobs/AddJobs";
 import ErrorPage from "../Utilitys/ErrorPage";
 import ApplyedJobs from "../../Pages/ApplyedJobs";
 import Jobdetails from "../HomeComponets/Jobs/Jobdetails";
+import Register from "../Login/Register";
 
 export const router = createBrowserRouter([
   {

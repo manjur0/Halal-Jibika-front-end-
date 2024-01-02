@@ -3,16 +3,14 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
 import { GrFavorite } from "react-icons/gr";
-import { Link,  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { setJobApplication } from "../../Utilitys/LocalStorage";
 
 const Job = ({ job }) => {
   const { id, way, logo, title, location, salary, position } = job;
 
   const handleApplyedJobAndAlert = (id) => {
-    
-    setJobApplication(id)
-    console.log(id);
+    setJobApplication(id);
     Swal.fire({
       title: "Are you sure?",
       text: "Do you want to add this job!",

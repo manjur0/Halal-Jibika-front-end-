@@ -1,6 +1,13 @@
-import { NavLink } from "react-router-dom"
-import './Navbar.css'
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { auth } from "../../Firebase.config";
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const halndleLogOut = () => {
+    logOut(auth);
+  };
   return (
     <div className="sticky top-0 z-50">
       <div className="relative w-full bg-white shadow-md  ">
@@ -52,22 +59,54 @@ const Navbar = () => {
               </NavLink>
             </ul>
           </div>
+          {/* user handle  */}
           <div className="hidden space-x-2 lg:block">
-            <NavLink to={"/register"}>
-              <button
-                type="button"
-                className="rounded-md bg-transparent px-3 py-2 text-xl font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-              >
-                Register
-              </button>
-            </NavLink>
-            <NavLink to={"/login"}>
-              <button
-                type="button"
-                className="rounded-md border border-black px-3 py-2 text-xl font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-              >
-                Log In
-              </button>
+            {user && user ? (
+              <NavLink>
+                <button
+                  onClick={halndleLogOut}
+                  type="button"
+                  className="rounded-md border border-black px-3 py-2 text-xl font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                >
+                  Log Out
+                </button>
+              </NavLink>
+            ) : (
+              <div>
+                <NavLink to={"/register"}>
+                  <button
+                    type="button"
+                    className="rounded-md bg-transparent px-3 py-2 text-xl font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  >
+                    Register
+                  </button>
+                </NavLink>
+                <NavLink to={"/login"}>
+                  <button
+                    type="button"
+                    className="rounded-md border border-black px-3 py-2 text-xl font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  >
+                    Log In
+                  </button>
+                </NavLink>
+              </div>
+            )}
+          </div>
+          {/* user icon */}
+          <div>
+            <NavLink>
+              <div className="avatar offline flex">
+                <div className="ml-8 w-12 rounded-full">
+                  {user ? (
+                    <img className="rounded-full" src={user.photoURL} alt="" />
+                  ) : (
+                    <img
+                      className="rounded-full"
+                      src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/corporate-user-icon.png"
+                    />
+                  )}
+                </div>
+              </div>
             </NavLink>
           </div>
           <div className="lg:hidden">
