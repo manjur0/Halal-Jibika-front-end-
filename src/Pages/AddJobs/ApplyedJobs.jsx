@@ -1,7 +1,7 @@
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 
-const AddJobs = ({ applyedJob }) => {
+const ApplyedJobs = ({ applyedJob }) => {
   const { id, way, logo, title, location, salary, description } = applyedJob;
   const { overview, details, requirements } = description;
 
@@ -77,4 +77,4 @@ const AddJobs = ({ applyedJob }) => {
   );
 };
 
-export default AddJobs;
+export default ApplyedJobs;

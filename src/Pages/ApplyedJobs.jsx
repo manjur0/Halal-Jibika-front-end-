@@ -4,8 +4,10 @@ import { useLoaderData } from "react-router-dom";
 import MainTitle from "../Components/Utilitys/MainTitle";
 import { useEffect, useState } from "react";
 import { getStoredJobApplication } from "../Components/Utilitys/LocalStorage";
-import AddJobs from "./AddJobs/AddJobs";
+import AddJobs from "./AddJobs/ApplyedJobs";
 const ApplyedJobs = () => {
+
+  // get local storage 
   const [applyedJobs, setApplyedJobs] = useState([]);
   const jobsList = useLoaderData();
   useEffect(() => {

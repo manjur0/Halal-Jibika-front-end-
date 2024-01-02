@@ -1,8 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { auth } from "../../Firebase.config";
+import { IoMdLogOut } from "react-icons/io";
+
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const halndleLogOut = () => {
@@ -13,9 +15,12 @@ const Navbar = () => {
       <div className="relative w-full bg-white shadow-md  ">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8 ">
           <div className="inline-flex items-center space-x-2">
-            <span className="font-bold cursor-pointer text-3xl ">
-              HALAL JIBIKA
-            </span>
+            <Link to={"/"}>
+              <span className="font-bold cursor-pointer text-3xl ">
+                <span className="text-4xl text-[#19A463]">Jibi</span>ka{" "}
+                <span className="text-4xl text-[#19A463]">.</span>
+              </span>
+            </Link>
           </div>
           <div className="hidden grow items-start lg:flex">
             <ul className="ml-12 inline-flex space-x-8">
@@ -66,9 +71,9 @@ const Navbar = () => {
                 <button
                   onClick={halndleLogOut}
                   type="button"
-                  className="rounded-md border border-black px-3 py-2 text-xl font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  className="rounded-lg  border-black px-3 py-2 text-3xl font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                 >
-                  Log Out
+                  <IoMdLogOut />
                 </button>
               </NavLink>
             ) : (

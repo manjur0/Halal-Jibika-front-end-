@@ -10,6 +10,7 @@ const Job = ({ job }) => {
   const { id, way, logo, title, location, salary, position } = job;
 
   const handleApplyedJobAndAlert = (id) => {
+    // setLocal storage 
     setJobApplication(id);
     Swal.fire({
       title: "Are you sure?",

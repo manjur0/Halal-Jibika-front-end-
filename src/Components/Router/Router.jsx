@@ -6,11 +6,12 @@ import About from "../../Pages/About/About";
 import Favorite from "../../Pages/Favorite/Favorite";
 import Contact from "../../Pages/Contact/Contact";
 import Login from "../Login/Login";
-import AddJobs from "../../Pages/AddJobs/AddJobs";
 import ErrorPage from "../Utilitys/ErrorPage";
 import ApplyedJobs from "../../Pages/ApplyedJobs";
 import Jobdetails from "../HomeComponets/Jobs/Jobdetails";
 import Register from "../Login/Register";
+import PrivateRoute from "../../AuthProvider/PrivateRoute";
+import AddJobs from "../../Pages/Jobs/AddJobs";
 
 export const router = createBrowserRouter([
   {
@@ -24,12 +25,20 @@ export const router = createBrowserRouter([
       },
       {
         path: "/jobs",
-        element: <Jobs />,
+        element: (
+          <PrivateRoute>
+            <Jobs />,
+          </PrivateRoute>
+        ),
       },
       {
         path: "/jobDetails/:id",
-        element: <Jobdetails />,
-        loader: () => fetch("/Jobs.json"),
+        element: (
+          <PrivateRoute>
+            <Jobdetails />
+          </PrivateRoute>
+        ),
+        loader: () => fetch(`/Jobs.json`),
       },
       {
         path: "/about",
@@ -58,7 +67,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/addjobs",
-        element: <AddJobs />,
+        element: <AddJobs/>
       },
     ],
   },
