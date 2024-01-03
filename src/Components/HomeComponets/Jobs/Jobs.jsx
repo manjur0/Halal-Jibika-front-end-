@@ -1,30 +1,41 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Job from "./Job";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Jobs = ({ slices }) => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    const fetchJobs = async () => {
+    const fetchServerData = async () => {
       try {
-        const response = await fetch("/Jobs.json");
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setJobs(data);
+        const response = await axios.get("http://localhost:9000/jobs");
+        setJobs(response.data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.log(error.message);
       }
     };
-    fetchJobs();
+    fetchServerData();
   }, []);
+
+
+  // delete job 
+  const handleDelete = (id) => {
+    const newJobs = jobs.filter((job) => job.id !== id)
+    setJobs(newJobs)
+
+     axios
+       .delete(`http://localhost:9000/jobs/${id}`)
+       .then((response) => toast.remove("Job deleted:", response))
+       .catch((error) => toast.error("Error deleting job:", error));
+  };
+
   return (
     <div className="mx-auto max-w-7xl my-20   ">
       <div className=" grid grid-cols-1 mx-auto  gap-4 md:grid-cols-2 lg:grid-cols-3">
         {jobs.slice(0, slices).map((job) => (
-          <Job key={job.id} job={job} />
+          <Job key={job.id} job={job} handleDelete={handleDelete} />
         ))}
       </div>
     </div>

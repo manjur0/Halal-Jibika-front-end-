@@ -4,13 +4,15 @@ import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
 import { GrFavorite } from "react-icons/gr";
 import { Link } from "react-router-dom";
-import { setJobApplication } from "../../Utilitys/LocalStorage";
+import { getStoredJobApplication, setJobApplication } from "../../Utilitys/LocalStorage";
+import { useState } from "react";
 
-const Job = ({ job }) => {
+const Job = ({ job, handleDelete }) => {
   const { id, way, logo, title, location, salary, position } = job;
+  const [deleteJob, setDeleteJob] = useState();
 
   const handleApplyedJobAndAlert = (id) => {
-    // setLocal storage 
+    // setLocal storage
     setJobApplication(id);
     Swal.fire({
       title: "Are you sure?",
@@ -31,16 +33,19 @@ const Job = ({ job }) => {
     });
   };
 
-  // faviorite job handler
+  // delete job
   const handleFavoriteJob = (id) => {
     console.log(id);
   };
+
+
+
   return (
     <div>
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
-        className="card w-96 bg-base-100 shadow-xl my-10 mx-auto py-8 px-10 rounded-lg"
+        className="card  bg-base-100 shadow-xl my-10 mx-auto py-8 px-10 rounded-lg"
       >
         <div className="card-body ">
           <div className="flex items-center justify-between">
@@ -71,6 +76,12 @@ const Job = ({ job }) => {
             className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
           >
             Apply
+          </button>
+          <button
+            onClick={() => handleDelete(id)}
+            className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
+          >
+            Delete
           </button>
           <Link to={`/jobdetails/${id}`}>
             <button className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all ">
