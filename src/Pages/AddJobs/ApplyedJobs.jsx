@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 
-const ApplyedJobs = ({ applyedJob }) => {
+const ApplyedJobs = ({ applyedJob, handlDelteApplyedJobs }) => {
   const { id, way, logo, title, location, salary, description } = applyedJob;
   const { overview, details, requirements } = description;
 
@@ -50,6 +50,7 @@ const ApplyedJobs = ({ applyedJob }) => {
             </Link>
             <Link to={""}>
               <button
+                onClick={() => handlDelteApplyedJobs(id)}
                 className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center  uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-300 active:bg-[#19A463] hover:text-[#19A463] active:text-[#19A463] bg-[#19A463] text-white"
                 type="button"
               >
@@ -78,3 +79,5 @@ const ApplyedJobs = ({ applyedJob }) => {
 };
 
 export default ApplyedJobs;
+
+// propType

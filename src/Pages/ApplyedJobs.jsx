@@ -5,9 +5,9 @@ import MainTitle from "../Components/Utilitys/MainTitle";
 import { useEffect, useState } from "react";
 import { getStoredJobApplication } from "../Components/Utilitys/LocalStorage";
 import AddJobs from "./AddJobs/ApplyedJobs";
+import axios from "axios";
 const ApplyedJobs = () => {
-
-  // get local storage 
+  // get local storage
   const [applyedJobs, setApplyedJobs] = useState([]);
   const jobsList = useLoaderData();
   useEffect(() => {
@@ -19,6 +19,22 @@ const ApplyedJobs = () => {
       setApplyedJobs(jobsApplyed);
     }
   }, []);
+
+  const handlDelteApplyedJobs = (id) => {
+    console.log(id);
+    const newApplyedJobs = applyedJobs.filter((job) => job.id !== id);
+    setApplyedJobs(newApplyedJobs);
+
+    // axios delete
+    axios
+      .delete(`http://localhost:9000/jobs/${id}`)
+      .then((response) => {
+        console.log("Job deleted:", response);
+      })
+      .catch((error) => {
+        console.error("Error deleting job:", error);
+      });
+  };
 
   return (
     <div>
@@ -34,9 +50,13 @@ const ApplyedJobs = () => {
       </div>
 
       {/* Applyed Jobs container */}
-      <div  className="mx-auto max-w-7xl grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 my-12"> 
+      <div className="mx-auto max-w-7xl grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 my-12">
         {applyedJobs?.map((job) => (
-          <AddJobs key={job.id} applyedJob={job} />
+          <AddJobs
+            handlDelteApplyedJobs={handlDelteApplyedJobs}
+            key={job.id}
+            applyedJob={job}
+          />
         ))}
       </div>
     </div>
