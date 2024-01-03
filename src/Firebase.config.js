@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBMqQeGvEQLLCCMtT3dP2_bvFGef-2IuZU",
-  authDomain: "hala-rijik-auth.firebaseapp.com",
-  projectId: "hala-rijik-auth",
-  storageBucket: "hala-rijik-auth.appspot.com",
-  messagingSenderId: "994958984946",
-  appId: "1:994958984946:web:65d9478d99e3e246a9b26b",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGE_SENDER_ID,
+  appId: import.meta.env.VITE_API_ID,
 };
 
 // Initialize Firebase
