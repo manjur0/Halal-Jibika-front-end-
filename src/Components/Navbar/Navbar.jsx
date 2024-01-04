@@ -10,6 +10,8 @@ const Navbar = () => {
   const halndleLogOut = () => {
     logOut(auth);
   };
+
+  console.log(user);
   return (
     <div className="sticky top-0 z-50">
       <div className="relative w-full bg-white shadow-md  ">
@@ -103,9 +105,9 @@ const Navbar = () => {
           <div>
             <NavLink>
               <div className="avatar offline flex">
-                <div className="ml-8 w-12 rounded-full">
+                <div className="ml-8 w-10 rounded-full">
                   {user ? (
-                    <img className="rounded-full" src={user.photoURL} alt="" />
+                    <img className="rounded-full" src="https://lh3.googleusercontent.com/a/ACg8ocLXTys42PgoafWkjY9arEVN3QwZbJvvUVGS4ZyelBkPd-o=s96-c" alt="" />
                   ) : (
                     <img
                       className="rounded-full"

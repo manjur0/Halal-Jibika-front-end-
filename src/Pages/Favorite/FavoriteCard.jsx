@@ -49,6 +49,7 @@ const FavoriteCard = ({ favJob, handleApplyJob }) => {
               </button>
             </Link>
             <button
+              onClick={() => handleApplyJob(id)}
               className="btn btn-primary bg-[#19a4634e]  px-5 py-2 rounded-lg text-[#19A463] hover:bg-[#19A463] hover:text-white hover:transition-all "
             >
               Apply

@@ -4,6 +4,7 @@ import MainTitle from "../../Components/Utilitys/MainTitle";
 import { useEffect, useState } from "react";
 import { getStoredJobApplication } from "../../Components/Utilitys/LocalStorage";
 import FavoriteCard from "./FavoriteCard";
+import Job from "../../Components/HomeComponets/Jobs/Job";
 
 const Favorite = () => {
   const [favorite, serFavorite] = useState();
@@ -20,7 +21,10 @@ const Favorite = () => {
 
   console.log(favorite);
 
+
+  // add to favorite
   const handleApplyJob = (id) => {
+    
   }
 
   return (
@@ -34,11 +38,7 @@ const Favorite = () => {
       </div>
       <div className=" mx-auto max-w-7xl  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
         {favorite?.map((favJob) => (
-          <FavoriteCard
-            key={favJob.id}
-            favJob={favJob}
-            handleApplyJob={handleApplyJob}
-          />
+          <FavoriteCard key={favJob.id} favJob={favJob} handleApplyJob={handleApplyJob} />
         ))}
       </div>
     </div>
