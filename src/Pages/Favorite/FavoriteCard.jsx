@@ -62,3 +62,5 @@ const FavoriteCard = ({ favJob, handleApplyJob }) => {
 };
 
 export default FavoriteCard;
+
+// propsType

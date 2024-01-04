@@ -107,7 +107,7 @@ const Navbar = () => {
               <div className="avatar offline flex">
                 <div className="ml-8 w-10 rounded-full">
                   {user ? (
-                    <img className="rounded-full" src="https://lh3.googleusercontent.com/a/ACg8ocLXTys42PgoafWkjY9arEVN3QwZbJvvUVGS4ZyelBkPd-o=s96-c" alt="" />
+                    <img className="rounded-full" src={user.photoURL} alt="" />
                   ) : (
                     <img
                       className="rounded-full"

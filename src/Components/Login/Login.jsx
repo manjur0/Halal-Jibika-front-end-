@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -7,6 +7,8 @@ import toast from "react-hot-toast";
 const Login = () => {
   const { loginEmailPassword } = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation()
+  console.log(location);
   const handleLogin = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -17,8 +19,9 @@ const Login = () => {
 
     loginEmailPassword(email, password)
       .then((result) => {
-        navigate("/");
+        location.state?.from ? navigate(location.state.from) : navigate("/");
         toast.success("You Successfully Logedin");
+
         console.log(result);
       })
       .catch((error) => {
