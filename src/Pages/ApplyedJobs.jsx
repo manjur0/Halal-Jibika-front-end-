@@ -20,14 +20,15 @@ const ApplyedJobs = () => {
     }
   }, []);
 
+  
+
   const handlDelteApplyedJobs = (id) => {
-    console.log(id);
     const newApplyedJobs = applyedJobs.filter((job) => job.id !== id);
-    setApplyedJobs(newApplyedJobs);
+    setApplyedJobs( newApplyedJobs);
 
     // axios delete
     axios
-      .delete(`http://localhost:9000/jobs/${id}`)
+      ?.delete(`http://localhost:9000/jobs/${id}`)
       .then((response) => {
         console.log("Job deleted:", response);
       })

@@ -1,155 +1,157 @@
-[
-  {
-    "id": 1,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-1.png",
-    "title": "Software Engineer",
-    "location": "San Francisco, CA",
-    "salary": "$120,000",
-    "position": "Senior",
-    "description": {
-      "overview": "Join our data science team as an intern and gain hands-on experience in data analysis and machine learning.",
-      "details": {
-        "responsibilities": "As a Data Science Intern, you will work closely with senior data scientists on real-world projects. Conduct data analysis, develop machine learning models, and contribute to data-driven decision-making. Collaborate with cross-functional teams to understand business requirements and transform them into actionable insights."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Ideal candidates are pursuing a degree in data science, statistics, or a related field. Strong analytical and problem-solving skills are a must. Experience with data manipulation tools, programming languages (Python, R), and a passion for learning new technologies are highly desirable."
+{
+  "jobs": [
+    {
+      "id": 1,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-1.png",
+      "title": "Software Engineer",
+      "location": "San Francisco, CA",
+      "salary": "$120,000",
+      "position": "Senior",
+      "description": {
+        "overview": "Join our data science team as an intern and gain hands-on experience in data analysis and machine learning.",
+        "details": {
+          "responsibilities": "As a Data Science Intern, you will work closely with senior data scientists on real-world projects. Conduct data analysis, develop machine learning models, and contribute to data-driven decision-making. Collaborate with cross-functional teams to understand business requirements and transform them into actionable insights."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Ideal candidates are pursuing a degree in data science, statistics, or a related field. Strong analytical and problem-solving skills are a must. Experience with data manipulation tools, programming languages (Python, R), and a passion for learning new technologies are highly desirable."
+        }
       }
-    }
-  },
-  {
-    "id": 2,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
-    "title": "Data Scientist",
-    "location": "New York, NY",
-    "salary": "$110,000",
-    "position": "Intern",
-    "description": {
-      "overview": "Exciting opportunity for an experienced Software Engineer to join our dynamic team.",
-      "details": {
-        "responsibilities": "As a Senior Software Engineer, you will play a key role in designing, developing, testing, and maintaining high-performance software solutions. Collaborate with cross-functional teams to define requirements, conduct code reviews, and implement best practices. Lead technical discussions, mentor junior developers, and contribute to the continuous improvement of our development processes."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Candidates should have a minimum of 5 years of experience in software development, a strong proficiency in multiple programming languages, and a proven track record of delivering complex projects. Excellent problem-solving skills, effective communication, and a passion for staying updated on industry trends are essential."
+    },
+    {
+      "id": 2,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
+      "title": "Data Scientist",
+      "location": "New York, NY",
+      "salary": "$110,000",
+      "position": "Intern",
+      "description": {
+        "overview": "Exciting opportunity for an experienced Software Engineer to join our dynamic team.",
+        "details": {
+          "responsibilities": "As a Senior Software Engineer, you will play a key role in designing, developing, testing, and maintaining high-performance software solutions. Collaborate with cross-functional teams to define requirements, conduct code reviews, and implement best practices. Lead technical discussions, mentor junior developers, and contribute to the continuous improvement of our development processes."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Candidates should have a minimum of 5 years of experience in software development, a strong proficiency in multiple programming languages, and a proven track record of delivering complex projects. Excellent problem-solving skills, effective communication, and a passion for staying updated on industry trends are essential."
+        }
       }
-    }
-  },
-  {
-    "id": 3,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
+    },
+    {
+      "id": 3,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
 
-    "title": "UX Designer",
-    "location": "Seattle, WA",
-    "salary": "$100,000",
-    "position": "Full-Time",
-    "description": {
-      "overview": "Exciting opportunity for a passionate UX Designer to create exceptional user experiences for our products.",
-      "details": {
-        "responsibilities": "As a Full-Time UX Designer, you will collaborate with cross-functional teams to design and optimize user interfaces. Conduct user research, create wireframes and prototypes, and iterate based on user feedback. Stay updated on industry trends and emerging design technologies to ensure our products provide the best user experience."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Successful candidates should have a strong portfolio, excellent design skills, and a deep understanding of user-centered design principles. Proficiency in design tools such as Sketch, Figma, or Adobe Creative Suite is required."
+      "title": "UX Designer",
+      "location": "Seattle, WA",
+      "salary": "$100,000",
+      "position": "Full-Time",
+      "description": {
+        "overview": "Exciting opportunity for a passionate UX Designer to create exceptional user experiences for our products.",
+        "details": {
+          "responsibilities": "As a Full-Time UX Designer, you will collaborate with cross-functional teams to design and optimize user interfaces. Conduct user research, create wireframes and prototypes, and iterate based on user feedback. Stay updated on industry trends and emerging design technologies to ensure our products provide the best user experience."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Successful candidates should have a strong portfolio, excellent design skills, and a deep understanding of user-centered design principles. Proficiency in design tools such as Sketch, Figma, or Adobe Creative Suite is required."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-1.png",
+      "title": "Product Manager",
+      "location": "Austin, TX",
+      "salary": "$130,000",
+      "position": "Senior",
+      "description": {
+        "overview": "Join our team as a Senior Product Manager and lead the development and launch of innovative products.",
+        "details": {
+          "responsibilities": "Senior Product Managers will drive product strategy, collaborate with cross-functional teams, and ensure successful product launches. Conduct market research, define product roadmaps, and prioritize features. Lead and motivate a team of product professionals to achieve strategic goals and deliver high-quality products to our customers."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Ideal candidates have a proven track record in product management, strong leadership skills, and a strategic mindset. Excellent communication and interpersonal skills are crucial for effective collaboration across departments."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
+      "title": "Marketing Specialist",
+      "location": "Chicago, IL",
+      "salary": "$90,000",
+      "position": "Intern",
+      "description": {
+        "overview": "Exciting internship opportunity for aspiring Marketing Specialists to gain hands-on experience in marketing and communications.",
+        "details": {
+          "responsibilities": "As a Marketing Specialist Intern, you will assist in the development and execution of marketing campaigns. Analyze market trends, contribute to brand building, and create engaging content for various channels. Collaborate with the marketing team to create and implement strategies that drive brand awareness and customer engagement."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Candidates should be pursuing a degree in marketing or a related field, have strong communication skills, and a passion for marketing. Familiarity with digital marketing tools, social media platforms, and content creation is a plus."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
+      "title": "Front-end Developer",
+      "location": "Los Angeles, CA",
+      "salary": "$110,000",
+      "position": "Full-Time",
+      "description": {
+        "overview": "Join our team as a Full-Time Front-end Developer and contribute to the development of visually stunning and responsive web applications.",
+        "details": {
+          "responsibilities": "Front-end Developers will collaborate with design teams to implement user interfaces, optimize website performance, and stay updated on emerging web technologies. Write clean, efficient, and maintainable code. Work closely with back-end developers to ensure seamless integration and a delightful user experience."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Successful candidates should have strong proficiency in HTML, CSS, JavaScript, and experience with modern front-end frameworks. A passion for creating beautiful and intuitive user interfaces is essential. Familiarity with version control systems and front-end build tools is a plus."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
+      "title": "Network Engineer",
+      "location": "Denver, CO",
+      "salary": "$115,000",
+      "position": "Senior",
+      "description": {
+        "overview": "Join our team as a Senior Product Manager and lead the development and launch of innovative products.",
+        "details": {
+          "responsibilities": "Senior Product Managers will drive product strategy, collaborate with cross-functional teams, and ensure successful product launches. Conduct market research, define product roadmaps, and prioritize features. Lead and motivate a team of product professionals to achieve strategic goals and deliver high-quality products to our customers."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Ideal candidates have a proven track record in product management, strong leadership skills, and a strategic mindset. Excellent communication and interpersonal skills are crucial for effective collaboration across departments."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "way": "Remote",
+      "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
+      "title": "HR Coordinator",
+      "location": "Miami, FL",
+      "salary": "$95,000",
+      "position": "Intern",
+      "description": {
+        "overview": "Exciting opportunity for an experienced Software Engineer to join our dynamic team.",
+        "details": {
+          "responsibilities": "As a Senior Software Engineer, you will play a key role in designing, developing, testing, and maintaining high-performance software solutions. Collaborate with cross-functional teams to define requirements, conduct code reviews, and implement best practices. Lead technical discussions, mentor junior developers, and contribute to the continuous improvement of our development processes."
+        },
+        "requirements": {
+          "heading": "Qualifications",
+          "content": "Candidates should have a minimum of 5 years of experience in software development, a strong proficiency in multiple programming languages, and a proven track record of delivering complex projects. Excellent problem-solving skills, effective communication, and a passion for staying updated on industry trends are essential."
+        }
       }
     }
-  },
-  {
-    "id": 4,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-1.png",
-    "title": "Product Manager",
-    "location": "Austin, TX",
-    "salary": "$130,000",
-    "position": "Senior",
-    "description": {
-      "overview": "Join our team as a Senior Product Manager and lead the development and launch of innovative products.",
-      "details": {
-        "responsibilities": "Senior Product Managers will drive product strategy, collaborate with cross-functional teams, and ensure successful product launches. Conduct market research, define product roadmaps, and prioritize features. Lead and motivate a team of product professionals to achieve strategic goals and deliver high-quality products to our customers."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Ideal candidates have a proven track record in product management, strong leadership skills, and a strategic mindset. Excellent communication and interpersonal skills are crucial for effective collaboration across departments."
-      }
-    }
-  },
-  {
-    "id": 5,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
-    "title": "Marketing Specialist",
-    "location": "Chicago, IL",
-    "salary": "$90,000",
-    "position": "Intern",
-    "description": {
-      "overview": "Exciting internship opportunity for aspiring Marketing Specialists to gain hands-on experience in marketing and communications.",
-      "details": {
-        "responsibilities": "As a Marketing Specialist Intern, you will assist in the development and execution of marketing campaigns. Analyze market trends, contribute to brand building, and create engaging content for various channels. Collaborate with the marketing team to create and implement strategies that drive brand awareness and customer engagement."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Candidates should be pursuing a degree in marketing or a related field, have strong communication skills, and a passion for marketing. Familiarity with digital marketing tools, social media platforms, and content creation is a plus."
-      }
-    }
-  },
-  {
-    "id": 6,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
-    "title": "Front-end Developer",
-    "location": "Los Angeles, CA",
-    "salary": "$110,000",
-    "position": "Full-Time",
-    "description": {
-      "overview": "Join our team as a Full-Time Front-end Developer and contribute to the development of visually stunning and responsive web applications.",
-      "details": {
-        "responsibilities": "Front-end Developers will collaborate with design teams to implement user interfaces, optimize website performance, and stay updated on emerging web technologies. Write clean, efficient, and maintainable code. Work closely with back-end developers to ensure seamless integration and a delightful user experience."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Successful candidates should have strong proficiency in HTML, CSS, JavaScript, and experience with modern front-end frameworks. A passion for creating beautiful and intuitive user interfaces is essential. Familiarity with version control systems and front-end build tools is a plus."
-      }
-    }
-  },
-  {
-    "id": 7,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-3.png",
-    "title": "Network Engineer",
-    "location": "Denver, CO",
-    "salary": "$115,000",
-    "position": "Senior",
-    "description": {
-      "overview": "Join our team as a Senior Product Manager and lead the development and launch of innovative products.",
-      "details": {
-        "responsibilities": "Senior Product Managers will drive product strategy, collaborate with cross-functional teams, and ensure successful product launches. Conduct market research, define product roadmaps, and prioritize features. Lead and motivate a team of product professionals to achieve strategic goals and deliver high-quality products to our customers."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Ideal candidates have a proven track record in product management, strong leadership skills, and a strategic mindset. Excellent communication and interpersonal skills are crucial for effective collaboration across departments."
-      }
-    }
-  },
-  {
-    "id": 8,
-    "way": "Remote",
-    "logo": "https://html.creativegigstf.com/khuj/khuj/images/slider/slider-2.png",
-    "title": "HR Coordinator",
-    "location": "Miami, FL",
-    "salary": "$95,000",
-    "position": "Intern",
-    "description": {
-      "overview": "Exciting opportunity for an experienced Software Engineer to join our dynamic team.",
-      "details": {
-        "responsibilities": "As a Senior Software Engineer, you will play a key role in designing, developing, testing, and maintaining high-performance software solutions. Collaborate with cross-functional teams to define requirements, conduct code reviews, and implement best practices. Lead technical discussions, mentor junior developers, and contribute to the continuous improvement of our development processes."
-      },
-      "requirements": {
-        "heading": "Qualifications",
-        "content": "Candidates should have a minimum of 5 years of experience in software development, a strong proficiency in multiple programming languages, and a proven track record of delivering complex projects. Excellent problem-solving skills, effective communication, and a passion for staying updated on industry trends are essential."
-      }
-    }
-  }
-]
+  ]
+}

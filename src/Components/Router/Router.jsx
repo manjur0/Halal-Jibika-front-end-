@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
             <Jobdetails />
           </PrivateRoute>
         ),
-        loader: () => fetch(`/Jobs.json`),
+        loader: () => fetch(`http://localhost:9000/jobs/`),
       },
       {
         path: "/about",
@@ -51,11 +51,12 @@ export const router = createBrowserRouter([
       {
         path: "/favorite",
         element: <Favorite />,
+        loader: () => fetch("http://localhost:9000/jobs/"),
       },
       {
         path: "/applyedjobs",
         element: <ApplyedJobs />,
-        loader: () => fetch("/Jobs.json"),
+        loader: () => fetch("http://localhost:9000/jobs/"),
       },
       {
         path: "/register",
@@ -67,7 +68,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/addjobs",
-        element: <AddJobs/>
+        element: <AddJobs />,
       },
     ],
   },

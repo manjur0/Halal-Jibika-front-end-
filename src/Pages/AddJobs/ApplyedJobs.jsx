@@ -1,5 +1,5 @@
-
 import { Link } from "react-router-dom";
+import { AiFillDelete } from "react-icons/ai";
 
 const ApplyedJobs = ({ applyedJob, handlDelteApplyedJobs }) => {
   const { id, way, logo, title, location, salary, description } = applyedJob;
@@ -25,7 +25,7 @@ const ApplyedJobs = ({ applyedJob, handlDelteApplyedJobs }) => {
           <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
             {overview}
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 justify-between">
             <Link to={`/jobs`}>
               <button
                 className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center  uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-300 active:bg-[#19A463] hover:text-[#19A463] active:text-[#19A463] bg-[#19A463] text-white"
@@ -48,27 +48,13 @@ const ApplyedJobs = ({ applyedJob, handlDelteApplyedJobs }) => {
                 </svg>
               </button>
             </Link>
-            <Link to={""}>
+            <Link>
               <button
                 onClick={() => handlDelteApplyedJobs(id)}
-                className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center  uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-300 active:bg-[#19A463] hover:text-[#19A463] active:text-[#19A463] bg-[#19A463] text-white"
+                className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center  uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-300 active:bg-[#19A463] hover:text-[#19A463] active:text-[#19A463] bg-transparent text-white"
                 type="button"
               >
-                Delete
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="w-4 h-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                  ></path>
-                </svg>
+                <AiFillDelete className="text-xl text-red-400" />
               </button>
             </Link>
           </div>
