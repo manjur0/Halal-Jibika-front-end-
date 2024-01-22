@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="inline-flex items-center space-x-2">
             <Link to={"/"}>
               <span className="font-bold cursor-pointer text-3xl ">
-                <span className="text-4xl text-[#19A463]">Jibi</span>ka{" "}
+                <span className="text-4xl text-[#19A463]">Wazi</span>Fa{" "}
                 <span className="text-4xl text-[#19A463]">.</span>
               </span>
             </Link>
