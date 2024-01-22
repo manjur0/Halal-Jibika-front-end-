@@ -38,7 +38,7 @@ export const router = createBrowserRouter([
             <Jobdetails />
           </PrivateRoute>
         ),
-        loader: () => fetch(`http://localhost:9000/jobs/`),
+        loader: () => fetch(`https://server-3rve.onrender.com/jobs/`),
       },
       {
         path: "/about",
@@ -51,12 +51,12 @@ export const router = createBrowserRouter([
       {
         path: "/favorite",
         element: <Favorite />,
-        loader: () => fetch("http://localhost:9000/jobs/"),
+        loader: () => fetch("https://server-3rve.onrender.com/jobs/"),
       },
       {
         path: "/applyedjobs",
         element: <ApplyedJobs />,
-        loader: () => fetch("http://localhost:9000/jobs/"),
+        loader: () => fetch("https://server-3rve.onrender.com/jobs/"),
       },
       {
         path: "/register",

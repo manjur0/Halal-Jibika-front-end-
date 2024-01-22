@@ -4,7 +4,7 @@ import { MdAccessTime } from "react-icons/md";
 import Swal from "sweetalert2";
 import { GrFavorite } from "react-icons/gr";
 import { Link } from "react-router-dom";
-import { getStoredJobApplication, setJobApplication } from "../../Utilitys/LocalStorage";
+import { setJobApplication } from "../../Utilitys/LocalStorage";
 
 const Job = ({ job, handleDelete }) => {
   const { id, way, logo, title, location, salary, position } = job;
@@ -35,8 +35,6 @@ const Job = ({ job, handleDelete }) => {
   const handleFavoriteJob = (id) => {
     console.log(id);
   };
-
-
 
   return (
     <div>

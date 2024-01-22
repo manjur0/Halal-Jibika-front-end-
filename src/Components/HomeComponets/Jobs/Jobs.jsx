@@ -10,7 +10,9 @@ const Jobs = ({ slices }) => {
   useEffect(() => {
     const fetchServerData = async () => {
       try {
-        const response = await axios.get("http://localhost:9000/jobs");
+        const response = await axios.get(
+          "https://server-3rve.onrender.com/jobs/"
+        );
         setJobs(response.data);
       } catch (error) {
         console.log(error.message);
@@ -26,7 +28,7 @@ const Jobs = ({ slices }) => {
     setJobs(newJobs)
 
      axios
-       .delete(`http://localhost:9000/jobs/${id}`)
+       .delete(`https://server-3rve.onrender.com/jobs/${id}`)
        .then((response) => toast.remove("Job deleted:", response))
        .catch((error) => toast.error("Error deleting job:", error));
   };

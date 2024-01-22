@@ -17,7 +17,7 @@ const Jobdetails = () => {
       <div>
         <Hero
           title="Job Details Apply Your"
-          minititle={" Dream Jobs"}
+          miniTitle={" Dream Jobs"}
           image={resume}
         />
       </div>
